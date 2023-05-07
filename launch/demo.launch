@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="traj_plan" type="traj_plan_node" name="traj_plan_node" output="screen"/>	
+    <node pkg="traj_plan" type="map_server_node" name="map_server_node" output="screen"/>	
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find traj_plan)/rviz/demo.rviz" required="true"/>	
+</launch>
